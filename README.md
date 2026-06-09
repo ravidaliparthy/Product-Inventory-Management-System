@@ -396,14 +396,6 @@ Through this project, the following concepts were implemented:
 
 ---
 
-# 👨‍💻 Author
-
-## Ravi Daliparthy
-
-**B.Tech – Information & Communication Technology**
-
-**SASTRA Deemed University**
-
 ### Skills Demonstrated
 
 - React.js
@@ -416,6 +408,7 @@ Through this project, the following concepts were implemented:
 - Full-Stack Development
 
 ---
+
 # ⚙ Configuration
 
 Before running the application, update the MongoDB connection string with your own database credentials.
