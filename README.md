@@ -330,127 +330,6 @@ Features:
 - Axios DELETE Request
 - Automatic Refresh
 
----
-
-# 📷 Application Screenshots
-
-## Add Product Page
-
-<img src="./screenshots/add-product.png" width="100%">
-
----
-
-## Product Listing Page
-
-<img src="./screenshots/view-products.png" width="100%">
-
----
-
-## Search Functionality
-
-<img src="./screenshots/search-product.png" width="100%">
-
----
-
-# ⚙ Installation Guide
-
-## Step 1: Clone Repository
-
-```bash
-git clone https://github.com/ravidaliparthy/product-inventory-management.git
-```
-
----
-
-## Step 2: Backend Setup
-
-Navigate to backend folder:
-
-```bash
-cd backend
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Required Packages:
-
-```bash
-npm install express mongoose cors
-```
-
-Run backend server:
-
-```bash
-node server.js
-```
-
-Backend URL:
-
-```text
-http://localhost:5000
-```
-
----
-
-## Step 3: MongoDB Setup
-
-Start MongoDB:
-
-```bash
-mongod
-```
-
-Database:
-
-```text
-mydatabase
-```
-
-MongoDB URL:
-
-```text
-mongodb://localhost:27017/mydatabase
-```
-
----
-
-## Step 4: Frontend Setup
-
-Navigate to frontend:
-
-```bash
-cd frontend
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Required Packages:
-
-```bash
-npm install axios react-router-dom bootstrap
-```
-
-Run React Application:
-
-```bash
-npm start
-```
-
-Frontend URL:
-
-```text
-http://localhost:3000
-```
-
----
 
 # 🔄 Application Workflow
 
@@ -535,6 +414,25 @@ Through this project, the following concepts were implemented:
 - Bootstrap
 - JavaScript
 - Full-Stack Development
+
+---
+# ⚙ Configuration
+
+Before running the application, update the MongoDB connection string with your own database credentials.
+
+```javascript
+mongoose.connect("mongodb://localhost:27017/mydatabase")
+```
+
+If using MongoDB Atlas:
+
+```javascript
+mongoose.connect(
+  "mongodb+srv://<username>:<password>@cluster.mongodb.net/<database-name>"
+)
+```
+
+> **Note:** Replace all placeholder values (`<username>`, `<password>`, and `<database-name>`) with your own credentials. For security reasons, never expose sensitive information in public repositories. Use environment variables to manage secrets.
 
 ---
 
